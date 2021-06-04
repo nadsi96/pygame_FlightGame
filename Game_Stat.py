@@ -1,8 +1,6 @@
 
 class Game_Stat():
     def __init__(self):
-        #self.game_play = False
-        #self.game_over = True
         self.life = 3
         self.score = 0
         self.game_play = False

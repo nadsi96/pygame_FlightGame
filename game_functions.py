@@ -171,14 +171,9 @@ def update_screen(setting, screen, flight, bullets, enemies, game_stat, sb, lb, 
         game_record.show_game_record()
         button[4].draw_button()#back button
     elif game_stat.game_over and game_stat.game_play:
-        """
-        for b in bullets:
-            bullets.remove(b)
-        for e in enemies:
-            enemies.remove(e)
-        """
         if game_stat.life == 0:
-            game_record.write_game_record(setting, screen, game_stat)
+#            game_record.write_game_record(setting, screen, game_stat)
+            game_record.input_game_record(setting, screen, game_stat)
             time.sleep(3)
             game_stat.life = -1
         bullets.empty()
